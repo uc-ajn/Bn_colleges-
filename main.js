@@ -3,7 +3,6 @@
 //title	edition	author	isbn	materialtype	requirementtype	publisher	publishercode	productcatentryid	copyrightyear	pricerangedisplay	booklink
 //store_url	user_guid	course_codes	created_on	last_updated_on
 
-
 import fetch from 'node-fetch';
 import * as fs from 'fs';
 import { createRequire } from "module";
@@ -17,8 +16,9 @@ let csvDataNotFound = 0;
 let countfullData = [];
 let countNotFoundData = [];
 
-const storeNames = ["enmu"]; //brockport,unoh,uakron-polsky,buffalostate,stfrancis,uncg,famu,lagcc,uportland,onondagacc,enmu
-const store_id = 35551
+const storeNames = ["enmu"]; //Enter Store name Here in between these two brakes and inverted comma's.
+
+const store_id = 35551 // Enter the store store Id here 
 
 const fetchBooksData = async () => {
     try {
