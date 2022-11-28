@@ -227,10 +227,10 @@ const fetchBooksData = async () => {
                                                 }
                                             }
                                         }
+                                        createCsv(fullData)
+                                        fullData = [];
                                     }
                                 }
-                                createCsv(fullData)
-                                fullData = [];
                             }
                         }
                     }
